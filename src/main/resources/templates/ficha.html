@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha do Animal</title>
+</head>
+<body>
+    <h1>Ficha do Animal</h1>
+    <p>Nome: <span th:text="${animal.nome}">Nome</span></p>
+    <p>Espécie: <span th:text="${animal.especie}">Espécie</span></p>
+    <p>Idade: <span th:text="${animal.idade}">0</span> anos</p>
+    
+    <h2>Dados do Tutor</h2>
+    <p>Tutor: <span th:text="${animal.tutor.nome}">Nome Tutor</span></p>
+    <p>Telefone: <span th:text="${animal.tutor.telefone}">Telefone</span></p>
+</body>
+</html>
