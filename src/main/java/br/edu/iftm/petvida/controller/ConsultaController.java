@@ -15,7 +15,7 @@ public class ConsultaController {
 
     @GetMapping("consulta") // ITEM 2 (Já estava correto)
     public String consulta(Model model) {
-        model.addAttribute("animal", repository.buscarPorId(1)); // ITEM 3 Corrigido ("animal" em vez de "bicho")
+        model.addAttribute("animal", repository.buscarPorId(2)); // ITEM 3 Corrigido ("animal" em vez de "bicho")
         return "consulta"; // ITEM 4 Corrigido ("consulta" em vez de "consulta.html")
     }
 }
